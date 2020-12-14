@@ -1,0 +1,243 @@
+.body{
+    font-family: "Poppins",sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+}
+.relative{
+    position: relative;
+}
+/* navbar*/
+.navbar{
+    background: #F2E1D9;
+    padding: 0 50px 0 165px;
+    z-index: 1000;
+}
+.navbar>div{
+    padding: 0;
+}
+.ulnavbar-1{
+    padding: 0;
+    margin: 0;
+}
+
+.logonavbar a img{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 165px;
+}
+.ulnavbar-1 li{
+    list-style: none;
+}
+
+.ulnavbar-1 >li >a{
+    display: block;
+    color: #1D2547;
+    font-weight: 600;
+    padding: 39px 19px;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: "Poppins",sans-serif;
+}
+.dropmenu{
+    position: absolute;
+    width: 170px;
+    background: #fff;
+    left: 0;
+    top: 90%;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 0 10px 3px rgba(0,0,0,0.05);
+    padding: 17px 0;
+    border-top: 3px solid #FD8F5F;
+    transition: .3s;
+    border-radius: 5px 5px 0 0;
+}
+.dropmenu li{
+    padding: 6px 10px 6px 20px !important;
+    font-family: "Poppins",sans-serif;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.dropmenu li:hover{
+    padding-left: 13px !important;
+}
+.dropmenu li:hover a{
+    color: #FD8F5F;
+}
+.pink:hover> a{
+    color: #FD8F5F;
+}
+.dropmenu li a{
+    text-decoration: none;
+    line-height: 1.5;
+    color: #212529;
+    font-weight: 700;
+}
+.on:hover ul {
+    visibility: visible;
+    top: 100%;
+    opacity: 1;
+}
+/*ul-navbar-2*/
+.ulnavbar-2{
+    margin: 0;
+}
+.ulnavbar-2 li{
+    list-style: none;
+}
+.ulnavbar-2 li >a{
+    padding: 0 44px;
+    color: #010A44;
+    font-size: 14px;
+    font-weight: 600;
+}
+.search{
+    position: relative;
+}
+.search input{
+    width: 260px;
+    height: 42px;
+    border: 0;
+    border-bottom: 1px solid #C2B6BB;
+    color: #010A44;
+    background: #F2E1D9;
+}
+::-webkit-input-placeholder {
+    color: black;
+}
+.search input:focus{
+    border-bottom: 1px solid #C2B6BB;
+    outline: none;
+}
+.myaccount{
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "Poppins",sans-serif;
+}
+.searchicon{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 24px;
+}
+.shopping-bag{
+    position: relative;
+}
+.shopping-bag i{
+    font-size: 30px;
+}
+.shopping-bag span{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    background: #FD8F5F;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 22px;
+    display: inline-block;
+    text-align: center;
+    height: 22px;
+    line-height: 22px;
+    position: absolute;
+    left: 17px;
+    bottom: -6px;
+}
+/* main*/
+
+/* thefirst */
+.thefirst{
+    background: #F2E1D9;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.background-1{
+    background-image: url(./images/thefirst.png);
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    opacity: 1;
+    width: 1470px;
+    min-height: 820px;
+    background-position: center center;
+    background-position-x: center;
+    background-position-y: center;
+}
+/* content-1 */
+.content-1{
+    padding: 39px 70px 56px 68px;
+    background: #fff;
+    width: 38.8%;
+    overflow: hidden;
+    position: absolute;
+    top: 20%;
+    left: 9%;
+}
+.content-1 span{
+    color: #7F85A8;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+    text-transform: uppercase;
+}
+.content-1 h1{
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 900;
+    margin-bottom: 14px;
+    line-height: 1.2;
+}
+.content-1 p{
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "Poppins",sans-serif;
+    color: #646D77;
+    margin-bottom: 25px;
+    padding-right: 49px;
+}
+.content-1 div{
+    background: #FD8F5F;
+    text-transform: uppercase;
+    padding: 27px 44px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    display: inline-block;
+    letter-spacing: 1px;
+    line-height: 0;
+    border: 0;
+    overflow: hidden;
+    margin: 0;
+    border-radius: 0;
+}
+/*thesecond*/
+.thesecond{
+    display: flex;
+    text-align: center;
+    padding: 7%;
+    max-width: 67%;
+    width: 100%;
+    min-height: 1px;
+    justify-content: center;
+    margin: auto;
+    font-family: "Poppins",sans-serif;
+}
+
+.thesecond> h2{
+    font-size: 36px;
+    display: block;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.thesecond>p{
+    color: #7F85A8;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+}
