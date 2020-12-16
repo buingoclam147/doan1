@@ -1,49 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-body{
-    font-family: "Poppins",sans-serif;
+body {
+    font-family: "Poppins", sans-serif;
     font-weight: normal;
     font-style: normal;
-    font-size: 16px;   
+    font-size: 16px;
 }
-.relative{
+
+:root {
+    --color-active: #FD8F5F;
+    --color-bg: #F2E1D9;
+}
+
+.noborder {
+    border: none;
+}
+
+.relative {
     position: relative;
 }
+
 /* navbar*/
-.navbar{
-    background: #F2E1D9;
+
+.navbar {
+    background: var(--color-bg);
     padding: 0 50px 0 165px;
     z-index: 1000;
 }
-.navbar>div{
+
+.navbar>div {
     padding: 0;
 }
-.ulnavbar-1{
+
+.ulnavbar-1 {
     padding: 0;
     margin: 0;
     margin-left: 5%;
 }
 
-.logonavbar a img{
+.logonavbar a img {
     position: absolute;
     z-index: 2;
     top: 0;
     left: 0;
     width: 165px;
 }
-.ulnavbar-1 li{
+
+.ulnavbar-1 li {
     list-style: none;
 }
 
-.ulnavbar-1 >li >a{
+.ulnavbar-1>li>a {
     display: block;
     color: #1D2547;
     font-weight: 600;
     padding: 39px 19px;
     font-size: 14px;
     text-decoration: none;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
 }
-.dropmenu{
+
+.dropmenu {
     position: absolute;
     width: 170px;
     background: #fff;
@@ -51,91 +67,110 @@ body{
     top: 90%;
     opacity: 0;
     visibility: hidden;
-    box-shadow: 0 0 10px 3px rgba(0,0,0,0.05);
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
     padding: 17px 0;
-    border-top: 3px solid #FD8F5F;
+    border-top: 3px solid var(--color-active);
     transition: .3s;
     border-radius: 5px 5px 0 0;
 }
-.dropmenu li{
+
+.dropmenu li {
     padding: 6px 10px 6px 20px !important;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.dropmenu li:hover{
+
+.dropmenu li:hover {
     padding-left: 30px !important;
 }
-.dropmenu li:hover a{
-    color: #FD8F5F;
+
+.dropmenu li:hover a {
+    color: var(--color-active);
 }
-.pink:hover> a{
-    color: #FD8F5F;
+
+.pink:hover>a {
+    color: var(--color-active);
 }
-.dropmenu li a{
+
+.dropmenu li a {
     text-decoration: none;
     line-height: 1.5;
     color: #212529;
     font-weight: 700;
 }
+
 .on:hover ul {
     visibility: visible;
     top: 100%;
     opacity: 1;
 }
+
 /*ul-navbar-2*/
-.ulnavbar-2{
+
+.ulnavbar-2 {
     margin: 0;
 }
-.ulnavbar-2 li{
+
+.ulnavbar-2 li {
     list-style: none;
 }
-.ulnavbar-2 li >a{
+
+.ulnavbar-2 li>a {
     padding: 0 44px;
     color: #010A44;
     font-size: 14px;
     font-weight: 600;
 }
-.search{
+
+.search {
     position: relative;
 }
-.search input{
+
+.search input {
     width: 260px;
     height: 42px;
     border: 0;
     border-bottom: 1px solid #C2B6BB;
     color: #010A44;
-    background: #F2E1D9;
+    background: var(--color-bg);
 }
+
 ::-webkit-input-placeholder {
     color: black;
 }
-.search input:focus{
+
+.search input:focus {
     border-bottom: 1px solid #C2B6BB;
     outline: none;
 }
-.myaccount{
+
+.myaccount {
     font-weight: 600;
     font-size: 14px;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
 }
-.searchicon{
+
+.searchicon {
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
     font-size: 24px;
 }
-.shopping-bag{
+
+.shopping-bag {
     position: relative;
 }
-.shopping-bag i{
+
+.shopping-bag i {
     font-size: 30px;
 }
-.shopping-bag span{
+
+.shopping-bag span {
     color: #fff;
     font-size: 14px;
     font-weight: 400;
-    background: #FD8F5F;
+    background: var(--color-active);
     border-radius: 30px;
     cursor: pointer;
     width: 22px;
@@ -147,25 +182,30 @@ body{
     left: 17px;
     bottom: -6px;
 }
+
 /* main*/
-.content{
+
+.content {
     overflow: hidden;
 }
+
 /* thefirst */
-.thefirst{
-    
+
+.thefirst {
     position: relative;
     margin: 0;
     padding: 0;
 }
-.backgroundcolor{
-    background: #F2E1D9;
+
+.backgroundcolor {
+    background: var(--color-bg);
     width: 100%;
     height: 111%;
     position: absolute;
     left: 9%;
 }
-.background-1{
+
+.background-1 {
     background-image: url(./images/thefirst.png);
     position: relative;
     display: block;
@@ -177,8 +217,10 @@ body{
     background-position-x: center;
     background-position-y: center;
 }
+
 /* content-1 */
-.content-1{
+
+.content-1 {
     padding: 39px 70px 56px 68px;
     background: #fff;
     width: 38.8%;
@@ -187,7 +229,8 @@ body{
     top: 20%;
     left: 9%;
 }
-.content-1 span{
+
+.content-1 span {
     color: #7F85A8;
     font-size: 26px;
     font-weight: 600;
@@ -195,23 +238,26 @@ body{
     display: block;
     text-transform: uppercase;
 }
-.content-1 h1{
+
+.content-1 h1 {
     text-transform: uppercase;
     font-size: 70px;
     font-weight: 900;
     margin-bottom: 14px;
     line-height: 1.2;
 }
-.content-1 p{
+
+.content-1 p {
     font-size: 18px;
     line-height: 30px;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #646D77;
     margin-bottom: 25px;
     padding-right: 49px;
 }
-.content-1 div{
-    background: #FD8F5F;
+
+.content-1 div {
+    background: var(--color-active);
     text-transform: uppercase;
     padding: 27px 44px;
     color: #fff;
@@ -225,8 +271,10 @@ body{
     margin: 0;
     border-radius: 0;
 }
-/*thesecond*/
-.thesecond{
+
+/*popular*/
+
+.popular {
     display: flex;
     text-align: center;
     padding: 7%;
@@ -235,11 +283,11 @@ body{
     min-height: 1px;
     justify-content: center;
     margin: auto;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     margin-top: 7%;
 }
 
-.thesecond> h2{
+.popular>h2 {
     font-size: 36px;
     display: block;
     font-weight: 700;
@@ -247,20 +295,219 @@ body{
     margin-bottom: 20px;
     text-transform: uppercase;
 }
-.thesecond>p{
+
+.popular>p {
     color: #7F85A8;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.6;
 }
+
 /* sofa */
-.nav__category li a{
+
+.nav__category li a {
     color: #010A44;
     padding: 30px 16px;
-    
 }
-.nav__category0{
+
+.nav__category0 {
     border-bottom: 2px solid #dee2e6;
+}
+
+.card-body {
+    text-align: center;
+}
+
+/* card */
+
+.tab {
+    padding-bottom: 5.4%;
+}
+
+.same__card {
+    border: 1px solid #F6F8FE !important;
+}
+
+.same__card:hover h6 {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.same__price {
+    color: #670000 !important;
+    font-weight: 600;
+}
+
+/* endcard */
+
+/* newblog */
+
+.new-blog .row {
+    height: 570px;
+}
+
+.blog__img {
+    background-image: url(./images/imgnewblog.png);
+    background-position: center;
+    background-size: cover;
+    width: 55%;
+}
+
+.blog__content {
+    background-color: var(--color-bg);
+    width: 45%;
+}
+
+.blog__content h1 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.blog__content p {
+    color: #010A44;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.blog__content>div {
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.btn__large {
+    width: 222px;
+    height: 54px;
+    border: none;
+    background-color: var(--color-active);
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.btn__large-outline {
+    background-color: white;
+    color: var(--color-active);
+    border: 1px var(--color-active) solid;
+    transition: all 0.3s ease;
+}
+
+.btn__large-outline:hover {
+    border: none;
+    background-color: var(--color-active);
+    color: white;
+}
+
+/* endnewblog */
+
+/* suggest product */
+
+.tab1 {
+    margin: 0 10%;
+}
+
+.poppular h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.poppular p {
+    color: #7F85A8;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.w__card {
+    width: 30%;
+}
+
+/* end suggest product */
+
+/* GET INSPIRED */
+
+.get__inspired {
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-left: 2.1%;
+}
+.get__inspired >div{
+    height: 501px;
+}
+.inspired{
+    padding: 0 1%;
+    margin: auto;
+    align-items: center;
+    height: 80%;
+}
+.inspired img{
+   margin-bottom: 9%;
+}
+.inspired h2 {
+    font-size: 36px;
+    display: block;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.inspired p{
+    color: #7F85A8;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 2.2rem;
+}
+
+.inspired__img1 {
+    background-image: url(./images/inspired1.png);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.inspired__img2 {
+    background-image: url(./images/inspired2.png);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+/* suggest product */
+.poppular__1 h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.poppular__1 p {
+    color: #7F85A8;
+    font-weight: 400;
+    line-height: 1.6;
+    width: 44.8%;
+    margin: auto;
+}
+/*end suggest product */
+/* footer */
+.footer{
+    background-color: #1D2547;
+    color: white;
+}
+.logo{
+    width: 97px;
+    height: 97px;
+    position: absolute;
+    background-image: url(./images/logo.png);
+    background-position: center;
+    background-size: contain;
 }
 .card-body{
     text-align: center;
