@@ -496,18 +496,61 @@ body {
     margin: auto;
 }
 /*end suggest product */
+/* Advantages */
+.advan{
+    background: var(--color-bg);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    right: 3rem;
+}
+.advantages{
+    width: 65%;
+    margin: auto;
+}
+.advantages img{
+    margin-bottom: 1.8rem;
+}
+.advantages h5{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    display: block;
+    text-transform: capitalize;
+}
+.advantages p{
+    color: #57667e;
+    font-size: 16px;
+    transition: .2s;
+    margin-bottom: 15px;
+    font-weight: normal;
+    line-height: 1.4;
+}
+/*end Advantages */
+.bgr{
+    background: var(--color-bg);
+}
 /* footer */
 .footer{
     background-color: #1D2547;
     color: white;
+    left: 3rem;
 }
-.logo{
-    width: 97px;
-    height: 97px;
-    position: absolute;
-    background-image: url(./images/logo.png);
-    background-position: center;
-    background-size: contain;
+.footer .row{
+    padding-top: 6.7rem;
+    padding-bottom: 3.1rem;
+}
+.footer .row .col-md-4{
+    margin: 0 5%;
+}
+.logo__footer img{
+margin-bottom: 2.2rem;
+}
+.info__1 p{
+    color: #C2C5DB;
+    font-size: 14px;
+    margin-right: 23.5%;
+    margin-bottom: 12%;
+    line-height: 1.8;
 }
 .card-body{
     text-align: center;
