@@ -15,7 +15,7 @@
 
 <body>
     <!--navbar-->
-    <div class="container-fluid">
+    <div class="container-fluid" id="myNavbar">
         <div class="row navbar ">
 
             <!--logo and dropdow-->
@@ -52,7 +52,7 @@
             </div>
             <!--search and my account-->
             <div class="col-md-6 ">
-                <ul class="d-flex align-items-center ulnavbar-2 mx-5">
+                <ul class="d-flex align-items-center ulnavbar-2" id="myAccount">
                     <li class="search">
                         <input type="text" name="search" placeholder="Search products">
                         <div class="searchicon">
@@ -87,7 +87,13 @@
                         <p>Suspendisse varius enim in eros elementum
                             tristique. Duis cursus, mi quis viverra ornare, eros
                             dolor interdum nulla.</p>
-                        <div class="btn">Discover More</div>
+                        <div class="btn butt">
+                            <div class="left-right">
+                            </div>
+                            <a href="#">
+                                Discover More
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -423,5 +429,22 @@
     </div>
 
 </body>
-
+<script>
+window.onscroll = function(){navbar()}
+function navbar(){
+console.info(document.documentElement.scrollTop)
+  if (document.documentElement.scrollTop > 400 || document.body.scrollTop){
+      var nav = document.getElementById("myNavbar");
+      var account = document.getElementById("myAccount");
+      nav.style.position = "fixed";
+      nav.style.zIndex = "1000";
+    account.classList.add("mx-4");
+  }
+  else{
+    var nav = document.getElementById("myNavbar");
+    
+    nav.style.position = "relative";
+  }
+};
+</script>
 </html>
