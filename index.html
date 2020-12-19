@@ -16,13 +16,15 @@
 <body>
     <!--navbar-->
     <div class="container-fluid" id="myNavbar">
-        <div class="row navbar ">
-
+        <div class="row navbar " id="inNavbar">
             <!--logo and dropdow-->
             <div class="col-md-6 align-items-center d-flex ">
-                <div class="logonavbar">
-                    <a href="#">
+                <div>
+                    <a href="#" class="logonavbar__1" id="logonavbar">
                         <img src="./images/logonavbar.png" alt="logo"></a>
+                    <a href="#" class="logonavbar__2">
+                        <img src="./images/logonavbar2.png" alt="logo2">
+                    </a>
                 </div>
                 <ul class="ulnavbar-1 align-items-center d-flex ">
                     <li class="pink active"><a href="#">Home</a></li>
@@ -51,7 +53,7 @@
                 </ul>
             </div>
             <!--search and my account-->
-            <div class="col-md-6 ">
+            <div class="col-md-6 search_0">
                 <ul class="d-flex align-items-center ulnavbar-2" id="myAccount">
                     <li class="search">
                         <input type="text" name="search" placeholder="Search products">
@@ -66,6 +68,34 @@
                     <li class="shopping-bag">
                         <i class='bx bx-shopping-bag'></i>
                         <span>0</span>
+                    </li>
+                    <li class="navbar__mobile">
+                            <i class='bx bx-menu' onclick="dr_menu()"></i>               
+                        <ul class="ulnavbar__mobile" id="block_none">
+                            <li class=""><a href="#">Home</a></li>
+                            <li class=""><a href="#">Product</a></li>
+                            <li class=""><a href="#">About</a></li>
+                            <!-- dropdowns-->
+                            <li class="" onclick="pages()">
+                                <a href="#" >Page <span>+</span></a>
+                                <ul class="d__n" id="page">
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="#">Card</a></li>
+                                    <li><a href="#">Categories</a></li>
+                                    <li><a href="#">Checkout</a></li>
+                                    <li><a href="#">Product Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="" onclick="blogs()"><a href="#">Blog <span>+</span></a>
+                                <ul class="d__n" id="blog">
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Blog Details</a></li>
+                                    <li><a href="#">Elements</a></li>
+
+                                </ul>
+                            </li>
+                            <li class=""><a href="#">Contact</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -189,7 +219,7 @@
             <div class="row mb-5">
                 <div class="col poppular">
                     <h2 class="display-4 text-center"> Products You May Like</h2>
-                    <p class="session-title text-center">Suspendisse varius enim in eros elementum tristique.<br /> Duis
+                    <p class="session-title text-center">Suspendisse varius enim in eros elementum tristique. Duis
                         cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
                 </div>
             </div>
@@ -361,60 +391,62 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-8 footer__2 d-flex">                    
-                            <div class="col-md-4 mb-50">
-                                <div class="foo">
-                                    <h4>Quick links</h4>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Image Licensin</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Style Guide</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Privacy Policy</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>   
-                            <div class="col-md-4 mb-50">
-                                <div class="foo">
-                                    <h4>Shop Category</h4>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Image Licensin</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Style Guide</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Privacy Policy</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div> 
-                            <div class="col-md-4 mb-50">
-                                <div class="foo">
-                                    <h4>Pertners</h4>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Image Licensin</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Style Guide</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Privacy Policy</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>                         
+                    <div class="col-md-8 footer__2 d-flex">
+                        <div class="col-md-4 mb-50">
+                            <div class="foo">
+                                <h4>Quick links</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">Image Licensin</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Style Guide</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Privacy Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-50">
+                            <div class="foo">
+                                <h4>Shop Category</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">Image Licensin</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Style Guide</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Privacy Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-50">
+                            <div class="foo">
+                                <h4>Pertners</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">Image Licensin</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Style Guide</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Privacy Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="copyright">
                     <div class="row">
-                        <p>Copyright ©2020 All rights reserved | This template is made with <i class='bx bxs-heart' style=" color: var(--color-active);"></i> by <b style=" color: var(--color-active);">BNL</b></p>
+                        <p>Copyright ©2020 All rights reserved | This template is made with <i class='bx bxs-heart'
+                                style=" color: var(--color-active);"></i> by <b
+                                style=" color: var(--color-active);">BNL</b></p>
                     </div>
                 </div>
             </div>
@@ -422,7 +454,7 @@
         <!-- end footer -->
     </div>
     <!-- booton up -->
-    <div class="pushup">
+    <div class="pushup" id="btnUp">
         <a href="#">
             <i class='bx bxs-chevrons-up'></i>
         </a>
@@ -430,21 +462,72 @@
 
 </body>
 <script>
-window.onscroll = function(){navbar()}
-function navbar(){
-console.info(document.documentElement.scrollTop)
-  if (document.documentElement.scrollTop > 400 || document.body.scrollTop){
-      var nav = document.getElementById("myNavbar");
-      var account = document.getElementById("myAccount");
-      nav.style.position = "fixed";
-      nav.style.zIndex = "1000";
-    account.classList.add("mx-4");
-  }
-  else{
-    var nav = document.getElementById("myNavbar");
-    
-    nav.style.position = "relative";
-  }
-};
+    window.onscroll = function () { navbar(), pushUp() }
+    function navbar() {
+        var nav = document.getElementById("myNavbar");
+        var account = document.getElementById("myAccount");
+        var logo = document.getElementById("logonavbar");
+        var navbar = document.getElementById("inNavbar")
+        if (document.documentElement.scrollTop > 350) {
+            nav.style.position = "fixed";
+            nav.style.zIndex = "1000";
+            account.classList.add("mx-4");
+            logo.style.display = "none";
+            navbar.style.padding = "0 0 0 4rem";
+        }
+        else {
+            account.classList.remove("mx-4");
+            nav.style.position = "relative";
+            logo.style.display = "block";
+            navbar.style.padding = "0 0 0 8rem";
+        }
+    };
+    function pushUp() {
+        var btnUp = document.getElementById("btnUp");
+        if (document.documentElement.scrollTop > 700) {
+            btnUp.style.display = "block";
+        }
+        else {
+            btnUp.style.display = "none";
+        }
+    };
+   /* anh hoac hien dropdown menu mobile */
+    var isShow = false;
+    var bn = document.getElementById("block_none");
+    function dr_menu(){
+        if (isShow==false){
+        bn.classList.add("d-block");
+        isShow=true;
+    }
+    else{
+        bn.classList.remove("d-block");
+        isShow=false;
+    }
+    }
+    var blo = false;
+    var blog = document.getElementById("blog");
+    function blogs(){
+        if (blo==false){
+        blog.classList.add("d-block");
+        blo=true;
+    }
+    else{
+        blog.classList.remove("d-block");
+        blo=false;
+    }
+    }
+    var pag = false;
+    var page = document.getElementById("page");
+    function pages(){
+        if (pag==false){
+        page.classList.add("d-block");
+        pag=true;
+    }
+    else{
+        page.classList.remove("d-block");
+        pag=false;
+    }
+    }
 </script>
+
 </html>
