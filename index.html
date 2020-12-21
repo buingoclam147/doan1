@@ -27,7 +27,7 @@
                     </a>
                 </div>
                 <ul class="ulnavbar-1 align-items-center d-flex ">
-                    <li class="pink active"><a href="#">Home</a></li>
+                    <li class="pink"><a href="#">Home</a></li>
                     <li class="pink"><a href="#">Product</a></li>
                     <li class="pink"><a href="#">About</a></li>
                     <!-- dropdowns-->
@@ -100,8 +100,26 @@
                 </ul>
             </div>
         </div>
+        
     </div>
     <!--content-->
+    <!-- search and my account and shopping-bang -->
+    <ul class="search__shoping__mobile position-absolute">
+        <li class="d-flex">
+            <input type="text" name="search" placeholder="Search products">
+            <div class="searchicon__mobile">
+                <i class='bx bx-search'></i>
+            </div>
+        </li>
+        <li class="pink__mobile">
+            <a href="#" class="btn myaccount__mobile">My Account
+            </a>
+        </li>
+        <li class="shopping-bag__mobile">
+            <i class='bx bx-shopping-bag'></i>
+            <span>0</span>
+        </li>
+        </ul>
     <div class="container-fluid content">
         <!--out-->
         <div class="row main">
@@ -139,22 +157,22 @@
             <div class="row mb-5">
                 <div class="col d-flex justify-content-center  nav__category0">
                     <ul class="nav nav__category ">
-                        <li class="nav-item  active">
+                        <li class="nav-item  item active" id="active1" onclick="act1()">
                             <a class="nav-link" href="#">Sofa</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item item" id="active2" onclick="act2()">
                             <a class="nav-link" href="#">Table</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item item" id="active3" onclick="act3()">
                             <a class="nav-link" href="#">Chair</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item item" id="active4" onclick="act4()">
                             <a class="nav-link" href="#">Bed</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item item" id="active5" onclick="act5()">
                             <a class="nav-link" href="#">Lightning</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item item" id="active6" onclick="act6()">
                             <a class="nav-link" href="#">Decore</a>
                         </li>
                     </ul>
@@ -201,7 +219,7 @@
                 <div class="col-md-7 blog__img"></div>
                 <div class="col-md-5 d-flex align-items-center justify-content-start blog__content">
                     <div class="pl-4">
-                        <h1 class="mb-3">BEST FURNITURE MANUFACTURER</h1>
+                        <h1 class="mb-3">BEST FURNITURE <br> MANUFACTURER</h1>
                         <p class="mb-3">Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis
                             viverra ornare, eros dolor interdum nulla.</p>
                         <p class="mb-5">Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis
@@ -275,10 +293,10 @@
                     <button class="btn__large btn__large-outline">Discover More</button>
                 </div>
                 <div class="col-xl-9 col-lg-8 inspired__img">
-                    <div class="inspired__img1 d-flex">
+                    <div class="inspired__img1 d-flex col-sm-12">
 
                     </div>
-                    <div class="inspired__img2 d-flex">
+                    <div class="inspired__img2 d-flex cik-sm-12">
 
                     </div>
                 </div>
@@ -442,7 +460,7 @@
                 </div>
                 <div class="col-xl-12 d-flex">
                     <div class="row  m-auto">
-                        <p>Copyright ©2020 All rights reserved | This template is made with <i class='bx bxs-heart'
+                        <p class="end">Copyright ©2020 All rights reserved | This template is made with <i class='bx bxs-heart'
                                 style=" color: var(--color-active);"></i> by <b
                                 style=" color: var(--color-active);">BNL</b></p>
                     </div>
@@ -457,9 +475,10 @@
             <i class='bx bxs-chevrons-up'></i>
         </a>
     </div>
-
+<!-- an hien thanh navbar -->
 </body>
 <script>
+    /* an hien thanh navbar */
     window.onscroll = function () { navbar(), pushUp() }
     function navbar() {
         var nav = document.getElementById("myNavbar");
@@ -525,6 +544,39 @@
             page.classList.remove("d-block");
             pag = false;
         }
+    }
+    /*carosel*/
+    const listItem = document.querySelectorAll('.item');
+    var ac1= document.getElementById(active1);
+    var ac2= document.getElementById(active2);
+    var ac3= document.getElementById(active3);
+    var ac4= document.getElementById(active4);
+    var ac5= document.getElementById(active5);
+    var ac6= document.getElementById(active6);
+    var active = document.getElementsByClassName(active);
+    function act1(){
+        listItem.classList.remove(active);
+        ac1.classList.add("active");
+    }
+    function act2(){
+         listItem.classList.remove(active);
+        ac2.classList.add("active");
+    }
+    function act3(){
+        listItem.classList.remove(active);
+        ac3.classList.add("active");
+    }
+    function act4(){
+        listItem.classList.remove(active);
+        ac4.classList.add("active");
+    }
+    function act5(){
+        listItem.classList.remove(active);
+        ac5.classList.add("active");
+    }
+    function act6(){
+        listItem.classList.remove(active);
+        ac6.classList.add("active");
     }
 </script>
 
